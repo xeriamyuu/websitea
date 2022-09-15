@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { Provider, createClient } from "urql";
-import Nav from "../components/Nav";
+import Nav from "../components/nav.js";
 import { StateContext } from "../lib/context";
 import { UserProvider } from "@auth0/nextjs-auth0";
 import { Toaster } from "react-hot-toast";
