@@ -29,7 +29,7 @@ export default function Profile({ user, orders }) {
           {orders.map((order) => (
             <Order key={order.id}>
               <h1>Order Number: {order.id}</h1>
-              <h2>{formatMoney(order.amount)}</h2>
+              <h2>Amount:{formatMoney(order.amount)}</h2>
               <h2>Receipt Email: {order.receipt_email}</h2>
             </Order>
           ))}
@@ -46,4 +46,14 @@ const Order = styled.div`
   padding: 3rem;
   display: flex;
   justify-content: space-between;
+  h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: black;
+  }
+  h2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
 `;
